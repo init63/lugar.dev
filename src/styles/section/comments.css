@@ -1,0 +1,141 @@
+.comments__body {
+  padding-top: 54px;
+  padding-bottom: 126px;
+}
+
+.comments__header {
+  margin-bottom: 78px;
+  text-align: center;
+}
+
+.comments__title,
+.comments__tagline {
+  color: var(--dark);
+}
+
+.comments__title {
+  margin-bottom: 12px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.comments__tagline {
+  font-size: 18px;
+}
+
+.comments__wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comments__autor {
+  flex: 0 1 50%;
+}
+
+.comments__autor-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.comments__content {
+  flex-basis: 50%;
+  color: var(--dark);
+}
+
+.comments__content-quotes {
+  margin-bottom: 18px;
+}
+
+.comments__content-quote {
+  fill: var(--blue);
+}
+
+.comments__content-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.comments__content-text {
+  margin: 18px 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.comments__content-autor-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.comments__content-autor-profession {
+  font-size: 18px;
+}
+
+.comments__slider-box {
+  position: relative;
+}
+
+.comments__slider-button-next,
+.comments__slider-button-prev {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 1185px) {
+  .comments__slider-button-next,
+  .comments__slider-button-prev {
+    bottom: -64px;
+  }
+
+  .comments__slider-button-next {
+    right: 45%;
+    transform: translateX(-45%);
+  }
+
+  .comments__slider-button-prev {
+    left: 45%;
+    transform: translateX(-45%);
+  }
+}
+
+@media (min-width: 1186px) {
+  .comments__slider-button-next,
+  .comments__slider-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 1186px) and (max-width: 1288px) {
+  .comments__slider-button-next {
+    right: -3%;
+  }
+
+  .comments__slider-button-prev {
+    left: -3%;
+  }
+}
+
+@media (min-width: 1289px) {
+  .comments__slider-button-next {
+    right: -84px;
+  }
+
+  .comments__slider-button-prev {
+    left: -84px;
+  }
+}
+
+.comments__slider-button-icon {
+  fill: var(--blue);
+}

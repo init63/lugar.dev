@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  padding: 16px 24px;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--dark);
+  transition: .2s;
+}
+
+.button--primary {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+.button--primary:hover {
+  background-color: var(--dark-hovered);
+  border-color: var(--dark-hovered);
+  box-shadow: 0 2px 4px rgb(0 0 0 / .4);
+}
+
+.button--secondary {
+  color: var(--dark);
+}

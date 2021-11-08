@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="menu" viewBox="0 0 32 32"><path d="M5 8h22M5 16h22M27 24H5" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="cross" viewBox="0 0 32 32"><path d="M7 24L25 8M25 24L7 8" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="arrow-left" viewBox="0 0 22 22"><path d="M21.67 9.67H5.44l7.45-7.46L11 .33.33 11 11 21.67l1.88-1.88-7.44-7.46h16.23V9.67Z"/></symbol>
+    <symbol id="arrow-right" viewBox="0 0 22 22"><path d="M11 .33 9.12 2.21l7.44 7.46H.33v2.66h16.23L9.12 19.8 11 21.67 21.67 11 11 .33Z"/></symbol>
+    <symbol id="quote" viewBox="0 0 26 28"><path d="M11.07.42h14.59L15.28 27.67H.69L11.07.42Z"/></symbol>
+    <symbol id="geo" viewBox="0 0 10 12"><path d="M5 .17A4.64 4.64 0 0 0 .33 4.95c0 1.86 1.43 4.04 4.29 6.55.22.2.55.2.77 0C8.24 9 9.67 6.8 9.67 4.95 9.67 2.05 7.45.17 5 .17ZM5 6a1.17 1.17 0 0 1 0-2.33c.64 0 1.17.52 1.17 1.16C6.17 5.48 5.64 6 5 6Z"/></symbol>
+    <symbol id="tel" viewBox="0 0 12 12"><path d="M2.86 5.3c.84 1.65 2.2 3 3.85 3.84l1.28-1.29c.16-.15.39-.2.6-.13.65.21 1.35.33 2.08.33.32 0 .58.26.58.58v2.04c0 .32-.26.58-.58.58A9.92 9.92 0 0 1 .75 1.33c0-.32.26-.58.58-.58h2.04c.33 0 .59.26.59.58 0 .73.12 1.43.33 2.09.07.2.02.43-.15.6L2.86 5.28Z"/></symbol>
+    <symbol id="mail" viewBox="0 0 12 10"><path d="M10.67.33H1.33C.7.33.17.86.17 1.5v7c0 .64.52 1.17 1.16 1.17h9.34c.64 0 1.16-.53 1.16-1.17v-7c0-.64-.52-1.17-1.16-1.17Zm0 2.34L6 5.58 1.33 2.67V1.5L6 4.42l4.67-2.92v1.17Z"/></symbol>
+</svg>

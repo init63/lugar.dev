@@ -1,0 +1,63 @@
+.page__body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 669px) {
+  .page__body--lock {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* TITLE */
+.title {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+@media (min-width: 140px) and (max-width: 814px) {
+  .title {
+    font-size: 31px;
+  }
+}
+
+@media (min-width: 815px) and (max-width: 984px) {
+  .title {
+    font-size: 39px;
+  }
+}
+
+@media (min-width: 985px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1148px) {
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}

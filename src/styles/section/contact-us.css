@@ -1,0 +1,49 @@
+.contact-us__body {
+  padding: 100px 0;
+}
+
+.contact-us__wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-us__picture-box,
+.contact-us__content {
+  flex: 0 1 50%;
+}
+
+.contact-us__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-us__title {
+  margin-bottom: 12px;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.contact-us__tagline {
+  font-size: 18px;
+  color: var(--gray);
+}
+
+.contact-us__form {
+  max-width: 100%;
+  height: auto;
+  margin: 38px 0;
+}
+
+.contact-us__btn-box {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.contact-us__guarantee {
+  font-size: 12px;
+  color: var(--gray);
+}

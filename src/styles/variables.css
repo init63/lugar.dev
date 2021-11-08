@@ -1,0 +1,12 @@
+:root {
+  /* Color */
+  --dark: #1e3240;
+  --blue: #b9d0de;
+  --white: #fff;
+  --gray: #bdbdbd;
+  --dark-hovered: #426d8c;
+
+  /* Base size */
+  --header-size: 80px;
+  --header-size-small: 50px;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./styles/index.min.css">
+
+  <title>Lugar</title>
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <div class="header__logo">
+          <h1 class="logo">Lugar</h1>
+        </div>
+        <nav class="header__navigation navigation">
+          <ul class="header__list navigation__list" id="navigation__list">
+            <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+            <li class="navigation__item"><a href="#reviews" class="navigation__link">Reviews</a></li>
+            <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="header__button" type="button" aria-expanded="false" aria-controls="navigation__list">
+           <svg class="header__icon" aria-hidden="true" width="32" height="32">
+              <use class="header__icon-menu" href="./images/sprite.svg#menu"></use>
+              <use class="header__icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <!-- HERO -->
+    <section class="hero js-section" id="home">
+      <div class="container">
+        <div class="hero__body">
+          <div class="hero__wrapper">
+            <div class="hero__content">
+              <h2 class="hero__title">A home is built with love and dreams</h2>
+              <p class="hero__text">Real estate farm that makes your dreams true</p>
+              <div class="hero__buttons">
+                <button class="button button--primary js-button" id="btn-projects" type="button">Our projects</button>
+                <button class="button button--secondary js-button" id="btn-contact" type="button">Contact us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source type="image/avif" srcset="./images/hero-img@1x.avif 1x, ./images/hero-img@2x.avif 2x">
+          <source type="image/webp" srcset="./images/hero-img@1x.webp 1x, ./images/hero-img@2x.webp 2x">
+          <img class="hero__picture" width="535" height="535"
+            src="./images/hero-img@1x.png"
+            srcset="./images/hero-img@2x.png"
+            alt="new building">
+        </picture>
+      </div>
+    </section>
+    <!-- / HERO -->
+
+    <!-- ABOUT -->
+    <section class="about js-section" id="about">
+      <div class="container">
+        <div class="about__body">
+          <div class="about__wrapper">
+            <div class="about__image-box">
+              <picture>
+                <source type="image/avif" srcset="./images/about-img@x1.avif 1x, ./images/about-img@x2.avif 2x">
+                <source type="image/webp" srcset="./images/about-img@x1.webp 1x, ./images/about-img@x2.webp 2x">
+                <img class="about__image" width="445" height="500"
+                  src="./images/about-img@x1.jpg"
+                  srcset="./images/about-img@x2.jpg"
+                  alt="elite new building">
+              </picture>
+            </div>
+            <div class="about__content-box">
+              <h2 class="about__title title">Award winning real estate company in Dubai</h2>
+              <p class="about__text">Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+            </div>
+            <div class="about__features">
+              <div class="about__features-item">
+                <p class="about__features-title">Previous projects</p>
+                <p class="about__features-content">34+</p>
+              </div>
+              <div class="about__features-item">
+                <p class="about__features-title">years experience</p>
+                <p class="about__features-content">20y</p>
+              </div>
+              <div class="about__features-item">
+                <p class="about__features-title">Ongoing projects</p>
+                <p class="about__features-content">12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / ABOUT -->
+
+    <!-- PROJECTS -->
+    <section class="projects js-section" id="projects">
+      <div class="projects__body">
+        <div class="container">
+          <h2 class="projects__title title">Ongoing projects</h2>
+          <div class="projects__wrapper">
+            <p class="projects__text">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+            <div class="projects__slider-buttons">
+              <button class="projects__slider-button-prev" type="button">
+                <svg class="projects__slider-button-icon" width="22" height="22">
+                    <use class="projects__arrow-icon" href="./images/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="projects__slider-button-next" type="button">
+                <svg class="projects__slider-button-icon" width="22" height="22">
+                    <use class="projects__arrow-icon" href="./images/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="projects__slider">
+            <div class="projects__slider-wrapper swiper-wrapper">
+              <div class="projects__slider-slide swiper-slide">
+                <div class="projects__card">
+                  <picture>
+                    <source type="image/avif" srcset="./images/project-img-1@x1.avif 1x, ./images/project-img-1@x2.avif 2x">
+                    <source type="image/webp" srcset="./images/project-img-1@x1.webp 1x, ./images/project-img-1@x2.webp 2x">
+                    <img class="projects__img" width="350" height="450"
+                      src="./images/project-img-1@x1.jpg"
+                      srcset="./images/project-img-1@x2.jpg"
+                      alt="Project Vintage Villa">
+                  </picture>
+                  <div class="projects__description">
+                    <p class="projects__name">Vintage Villa</p>
+                    <p class="projects__address">2715 Ash Dr. San Jose, Dubai</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__slider-slide swiper-slide">
+                <div class="projects__card">
+                  <picture>
+                    <source type="image/avif" srcset="./images/project-img-2@x1.avif 1x, ./images/project-img-2@x2.avif 2x">
+                    <source type="image/webp" srcset="./images/project-img-2@x1.webp 1x, ./images/project-img-2@x2.webp 2x">
+                    <img class="projects__img" width="350" height="450"
+                      src="./images/project-img-2@x1.jpg"
+                      srcset="./images/project-img-2@x2.jpg"
+                      alt="Project Tonga Villa">
+                  </picture>
+                  <div class="projects__description">
+                    <p class="projects__name">Tonga Villa</p>
+                    <p class="projects__address">1901 Thornridge Cir. Shiloh 81063</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__slider-slide swiper-slide">
+                <div class="projects__card">
+                  <picture>
+                    <source type="image/avif" srcset="./images/project-img-3@x1.avif 1x, ./images/project-img-3@x2.avif 2x">
+                    <source type="image/webp" srcset="./images/project-img-3@x1.webp 1x, ./images/project-img-3@x2.webp 2x">
+                    <img class="projects__img" width="350" height="450"
+                      src="./images/project-img-3@x1.jpg"
+                      srcset="./images/project-img-3@x2.jpg"
+                      alt="Project Penthouse">
+                  </picture>
+                  <div class="projects__description">
+                    <p class="projects__name">Penthouse</p>
+                    <p class="projects__address">2464 Royal Ln. Mesa, 45463</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__slider-slide swiper-slide">
+                <div class="projects__card">
+                  <picture>
+                    <source type="image/avif" srcset="./images/project-img-4@x1.avif 1x, ./images/project-img-4@x2.avif 2x">
+                    <source type="image/webp" srcset="./images/project-img-4@x1.webp 1x, ./images/project-img-4@x2.webp 2x">
+                    <img class="projects__img" width="350" height="450"
+                      src="./images/project-img-4@x1.jpg"
+                      srcset="./images/project-img-4@x2.jpg"
+                      alt="Project Smart city project">
+                  </picture>
+                  <div class="projects__description">
+                    <p class="projects__name">Smart city project</p>
+                    <p class="projects__address">2715 Ash Dr. San Jose, Dubai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / PROJECTS -->
+
+    <!-- COMMENTS -->
+    <section class="comments js-section" id="reviews">
+      <div class="comments__body">
+        <div class="container">
+          <div class="comments__header">
+            <h2 class="comments__title title">Few smiles and comment</h2>
+            <p class="comments__tagline">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+          </div>
+          <div class="comments__slider-box">
+            <div class="comments__slider swiper">
+              <div class="comments__slider-wrapper swiper-wrapper">
+                <div class="comments__slider-slide swiper-slide">
+                  <div class="comments__wrapper">
+                    <div class="comments__autor">
+                      <picture>
+                        <source type="image/avif" srcset="./images/comments-img@x1.avif 1x, ./images/comments-img@x2.avif 2x">
+                        <source type="image/webp" srcset="./images/comments-img@x1.webp 1x, ./images/comments-img@x2.webp 2x">
+                        <img class="comments__autor-img" width="445" height="350"
+                          src="./images/comments-img@x1.jpg"
+                          srcset="./images/comments-img@x2.jpg"
+                          alt="Blonde girl">
+                      </picture>
+                    </div>
+                    <div class="comments__content">
+                      <div class="comments__content-quotes">
+                        <svg class="comments__content-quote" width="26" height="28">
+                          <use href="./images/sprite.svg#quote"></use>
+                        </svg>
+                        <svg class="comments__content-quote" width="26" height="28">
+                          <use href="./images/sprite.svg#quote"></use>
+                        </svg>
+                      </div>
+                      <p class="comments__content-title">Dream house isn’t dream anymore</p>
+                      <p class="comments__content-text">Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.</p>
+                      <p class="comments__content-autor-name">Brooklyn Simmons</p>
+                      <p class="comments__content-autor-profession">Artist</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments__slider-slide swiper-slide">
+                  <div class="comments__wrapper">
+                    <div class="comments__autor">
+                      <picture>
+                        <source type="image/avif" srcset="./images/comments-img@x1.avif 1x, ./images/comments-img@x2.avif 2x">
+                        <source type="image/webp" srcset="./images/comments-img@x1.webp 1x, ./images/comments-img@x2.webp 2x">
+                        <img class="comments__autor-img" width="445" height="350"
+                          src="./images/comments-img@x1.jpg"
+                          srcset="./images/comments-img@x2.jpg"
+                          alt="Blonde girl">
+                      </picture>
+                    </div>
+                    <div class="comments__content">
+                      <div class="comments__content-quotes">
+                        <svg class="comments__content-quote" width="26" height="28">
+                          <use href="./images/sprite.svg#quote"></use>
+                        </svg>
+                        <svg class="comments__content-quote" width="26" height="28">
+                          <use href="./images/sprite.svg#quote"></use>
+                        </svg>
+                      </div>
+                      <p class="comments__content-title">Dream house isn’t dream anymore</p>
+                      <p class="comments__content-text">Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.</p>
+                      <p class="comments__content-autor-name">Brooklyn Simmons</p>
+                      <p class="comments__content-autor-profession">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="comments__slider-button-prev" type="button">
+              <svg class="comments__slider-button-icon" width="22" height="22">
+                  <use href="./images/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="comments__slider-button-next" type="button">
+              <svg class="comments__slider-button-icon" width="22" height="22">
+                  <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / COMMENTS -->
+
+    <!-- CONTACT US -->
+    <section class="contact-us js-section" id="contact">
+      <div class="container">
+        <div class="contact-us__body">
+          <div class="contact-us__wrapper">
+            <div class="contact-us__picture-box">
+              <picture>
+                <source type="image/avif" srcset="./images/contact-img@x1.avif 1x, ./images/contact-img@x2.avif 2x">
+                <source type="image/webp" srcset="./images/contact-img@x1.webp 1x, ./images/contact-img@x2.webp 2x">
+                <img class="contact-us__img" width="445" height="500"
+                  src="./images/contact-img@x1.jpg"
+                  srcset="./images/contact-img@x2.jpg"
+                  alt="House">
+              </picture>
+            </div>
+            <div class="contact-us__content">
+              <h2 class="contact-us__title title">Contact us</h2>
+              <p class="contact-us__tagline">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+              <form class="contact-us__form form" id="contact-us-form" method="post">
+                <input class="form__input" type="text" placeholder="First name" required>
+                <input class="form__input" type="text" placeholder="Last name" required>
+                <input class="form__input" type="email" placeholder="Email address" required>
+                <input class="form__input" type="tel" placeholder="Phone number" required>
+                <textarea class="form__textarea" placeholder="Description" required></textarea>
+              </form>
+              <div class="contact-us__btn-box">
+                <button class="button button--primary" type="submit" form="contact-us-form">Get a quote</button>
+                <p class="contact-us__guarantee">We don’t sell your email and spam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / CONTACT US -->
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__body">
+        <div class="footer__wrapper">
+          <div class="footer__contacts-box">
+            <p class="footer__title">Lugar</p>
+            <ul class="footer__list">
+              <li class="footer__list-item footer__list-item--df">
+                <svg class="footer__icon" width="10" height="12">
+                  <use href="./images/sprite.svg#geo"></use>
+                </svg>
+                <address class="footer__contacts-address">2118 Thornridge Cir. Dubai, UAE 35624</address>
+              </li>
+              <li class="footer__list-item footer__list-item--df">
+                <svg class="footer__icon" width="12" height="12">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+                <a class="footer__link" href="tel:+33415653569">+33 415 65356 - 9</a>
+              </li>
+              <li class="footer__list-item footer__list-item--df">
+                <svg class="footer__icon" width="12" height="10">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                <a class="footer__link" href="mailto:contact@lugar.com">contact@lugar.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__other-links-box">
+            <div class="footer__links-box">
+              <p class="footer__title">Quick links</p>
+              <ul class="footer__list js-footer-list">
+                <li class="footer__list-item"><a href="#home" class="footer__link">Home</a></li>
+                <li class="footer__list-item"><a href="#about" class="footer__link">About</a></li>
+                <li class="footer__list-item"><a href="#projects" class="footer__link">Project</a></li>
+                <li class="footer__list-item"><a href="#reviews" class="footer__link">Reviews</a></li>
+                <li class="footer__list-item"><a href="#contact" class="footer__link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer__links-box">
+              <p class="footer__title">Legal Links</p>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#" class="footer__link">Terms</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">Conditions</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer__links-box">
+              <p class="footer__title">Social media</p>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#" class="footer__link">Facebook</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">Twitter</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">YouTube</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <small class="footer__copyright">Copyright @ 2021 Lugar Inc.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./scripts/slider-settings.min.js"></script>
+  <script src="./scripts/index.min.js"></script>
+</body>
+</html>
