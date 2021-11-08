@@ -22,8 +22,13 @@
   fill: var(--gray);
 }
 
-.footer__wrapper {
+.footer__wrapper,
+.footer__other-links-box {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__wrapper {
   justify-content: space-between;
   margin-bottom: 107px;
 }
@@ -34,10 +39,6 @@
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
-}
-
-.footer__other-links-box {
-  display: flex;
 }
 
 @media (max-width: 924px) {
