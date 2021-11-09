@@ -23,7 +23,8 @@
   color: var(--dark);
 }
 
-@media (orientation: landscape) and (max-device-width: 1023px) and (max-device-height: 767px) {
+@media (orientation: landscape) and (max-device-width: 1199px)
+  and (max-device-height: 767px) {
   .button {
     padding: 8px 12px;
   }

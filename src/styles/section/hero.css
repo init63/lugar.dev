@@ -42,7 +42,7 @@
   height: auto;
 }
 
-@media (orientation: landscape) and (max-device-width: 1023px)
+@media (orientation: landscape) and (max-device-width: 1199px)
   and (max-device-height: 767px) {
   .hero__title {
     font-size: 2rem;
