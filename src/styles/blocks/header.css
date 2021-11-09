@@ -21,10 +21,15 @@
   box-shadow: 0 5px 15px rgb(0 0 0 / .2);
 }
 
+@media (orientation: landscape) and (max-device-width: 1023px) and (max-device-height: 767px) {
+  .header__body {
+    height: var(--header-size-small);
+  }
+}
+
 @media (max-width: 669px) {
   .header__body {
     position: relative;
-    height: var(--header-size-small);
   }
 
   .header__list {
@@ -65,6 +70,12 @@
   .header__icon-cross,
   .header__button--open .header__icon-menu {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__body {
+    height: var(--header-size-small);
   }
 }
 

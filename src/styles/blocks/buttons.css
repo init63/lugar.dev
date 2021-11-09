@@ -1,6 +1,5 @@
 .button {
   display: block;
-  padding: 16px 24px;
   margin: 0;
   font-size: 14px;
   cursor: pointer;
@@ -22,4 +21,28 @@
 
 .button--secondary {
   color: var(--dark);
+}
+
+@media (orientation: landscape) and (max-device-width: 1023px) and (max-device-height: 767px) {
+  .button {
+    padding: 8px 12px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 309px) {
+  .button {
+    padding: 8px 12px;
+  }
+}
+
+@media (min-width: 310px) and (max-width: 823px) {
+  .button {
+    padding: 12px 20px;
+  }
+}
+
+@media (min-width: 824px) {
+  .button {
+    padding: 16px 24px;
+  }
 }
