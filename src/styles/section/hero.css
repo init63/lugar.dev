@@ -10,8 +10,11 @@
 .hero__body {
   position: relative;
   z-index: 2;
-  align-items: center;
   height: 100vh;
+}
+
+.hero__content {
+  align-self: center;
 }
 
 .hero__title,
