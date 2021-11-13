@@ -4,26 +4,8 @@
   column-gap: 32px;
 }
 
-.about__title,
-.about__features-content {
-  color: var(--dark);
-}
-
-.about__title,
-.about__features-title {
-  font-weight: 700;
-}
-
-.about__image {
-  max-width: 100%;
-  height: auto;
-}
-
 /* TEXT */
 .about__text {
-  margin-top: 40px;
-  font-size: 18px;
-  line-height: 21.6px;
   color: var(--gray);
 }
 
@@ -38,13 +20,14 @@
 
 .about__features-title {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-weight: 700;
   color: var(--blue);
   text-transform: uppercase;
 }
 
 .about__features-content {
   font-weight: 300;
+  color: var(--dark);
 }
 
 /* MEDIA QUERIES */
@@ -65,31 +48,36 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .about__image {
+    max-width: 100%;
+    height: auto;
+  }
+
   .about__features {
     grid-column: span 2;
-  }
-}
-
-@media (orientation: landscape) and (max-device-width: 1199px)
-  and (max-device-height: 767px) {
-  .about__body {
-    padding-top: 84px;
-    padding-bottom: 84px;
   }
 }
 
 @media (max-width: 767px) {
   .about__body {
     padding-top: 84px;
-    padding-bottom: 84px;
+    padding-bottom: 48px;
   }
 
   .about__content-box {
     align-self: center;
   }
 
+  .about__text {
+    margin-top: 24px;
+  }
+
   .about__features {
     justify-content: space-evenly;
+  }
+
+  .about__features-title {
+    font-size: 12px;
   }
 }
 
@@ -107,37 +95,33 @@
     grid-row: span 2;
   }
 
+  .about__text {
+    margin-top: 40px;
+  }
+
   .about__features {
     grid-column: span 1;
     justify-content: space-between;
   }
+
+  .about__features-title {
+    font-size: 14px;
+  }
 }
 
-@media (min-width: 140px) and (max-width: 814px) {
-  .about__title {
-    line-height: 42px;
-  }
-
+@media (max-width: 767px) {
   .about__features-content {
-    font-size: 31px;
+    font-size: 24px;
   }
 }
 
-@media (min-width: 815px) and (max-width: 968px) {
-  .about__title {
-    line-height: 52px;
-  }
-
+@media (min-width: 768px) and (max-width: 1023px) {
   .about__features-content {
-    font-size: 39px;
+    font-size: 32px;
   }
 }
 
-@media (min-width: 969px) {
-  .about__title {
-    line-height: 58px;
-  }
-
+@media (min-width: 1024px) {
   .about__features-content {
     font-size: 48px;
   }

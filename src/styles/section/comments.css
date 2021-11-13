@@ -4,8 +4,19 @@
 }
 
 .comments__header {
-  margin-bottom: 78px;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .comments__header {
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__header {
+    margin-bottom: 78px;
+  }
 }
 
 .comments__title,
@@ -15,12 +26,6 @@
 
 .comments__title {
   margin-bottom: 12px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.comments__tagline {
-  font-size: 18px;
 }
 
 .comments__wrapper {
@@ -30,8 +35,17 @@
   justify-content: space-between;
 }
 
-.comments__autor {
-  flex: 0 1 50%;
+@media (max-width: 767px) {
+  .comments__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__autor,
+  .comments__content {
+    flex-basis: 48%;
+  }
 }
 
 .comments__autor-img {
@@ -40,37 +54,83 @@
 }
 
 .comments__content {
-  flex-basis: 50%;
   color: var(--dark);
 }
 
-.comments__content-quotes {
-  margin-bottom: 18px;
-}
-
 .comments__content-quote {
+  height: auto;
   fill: var(--blue);
 }
 
+@media (max-width: 767px) {
+  .comments__content-quotes {
+    margin-bottom: 8px;
+  }
+
+  .comments__content-quote {
+    width: 18px;
+  }
+
+  .comments__content-quote:last-child {
+    margin-left: -8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__content-quotes {
+    margin-bottom: 18px;
+  }
+
+  .comments__content-quote {
+    width: 26px;
+  }
+}
+
 .comments__content-title {
-  font-size: 32px;
   font-weight: 700;
 }
 
-.comments__content-text {
-  margin: 18px 0;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 28px;
+@media (min-width: 768px) {
+  .comments__content-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .comments__content-text {
+    margin: 12px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__content-text {
+    margin: 18px 0;
+    font-weight: 300;
+  }
 }
 
 .comments__content-autor-name {
-  font-size: 24px;
   font-weight: 600;
 }
 
-.comments__content-autor-profession {
-  font-size: 18px;
+@media (max-width: 767px) {
+  .comments__content-autor-name {
+    font-size: 18px;
+  }
+
+  .comments__content-autor-profession {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__content-autor-name {
+    font-size: 24px;
+  }
+
+  .comments__content-autor-profession {
+    font-size: 18px;
+  }
 }
 
 .comments__slider-box {
@@ -98,13 +158,13 @@
   }
 
   .comments__slider-button-next {
-    right: 45%;
-    transform: translateX(-45%);
+    right: 25%;
+    transform: translateX(-25%);
   }
 
   .comments__slider-button-prev {
-    left: 45%;
-    transform: translateX(-45%);
+    left: 25%;
+    transform: translateX(-25%);
   }
 }
 

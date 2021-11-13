@@ -4,6 +4,8 @@
 @import './base.css';
 
 /* Blocks */
+@import './blocks/title.css';
+@import './blocks/text.css';
 @import './blocks/buttons.css';
 @import './blocks/header.css';
 @import './blocks/logo.css';
