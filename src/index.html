@@ -49,15 +49,15 @@
               <button class="button button--secondary js-button" id="btn-contact" type="button">Contact us</button>
             </div>
           </div>
+          <picture>
+            <source type="image/avif" srcset="./images/hero-img@1x.avif 1x, ./images/hero-img@2x.avif 2x">
+            <source type="image/webp" srcset="./images/hero-img@1x.webp 1x, ./images/hero-img@2x.webp 2x">
+            <img class="hero__picture" width="535" height="535"
+              src="./images/hero-img@1x.png"
+              srcset="./images/hero-img@2x.png"
+              alt="new building">
+          </picture>
         </div>
-        <picture>
-          <source type="image/avif" srcset="./images/hero-img@1x.avif 1x, ./images/hero-img@2x.avif 2x">
-          <source type="image/webp" srcset="./images/hero-img@1x.webp 1x, ./images/hero-img@2x.webp 2x">
-          <img class="hero__picture" width="535" height="535"
-            src="./images/hero-img@1x.png"
-            srcset="./images/hero-img@2x.png"
-            alt="new building">
-        </picture>
       </div>
     </section>
     <!-- / HERO -->
@@ -280,7 +280,7 @@
     <!-- / COMMENTS -->
 
     <!-- CONTACT US -->
-<!--     <section class="contact-us js-section" id="contact">
+    <section class="contact-us js-section" id="contact">
       <div class="container">
         <div class="contact-us__body">
           <div class="contact-us__wrapper">
@@ -305,14 +305,16 @@
                 <textarea class="form__textarea" placeholder="Description" required></textarea>
               </form>
               <div class="contact-us__btn-box">
-                <button class="button button--primary" type="submit" form="contact-us-form">Get a quote</button>
+                <div class="wrapper">
+                  <button class="button button--primary" type="submit" form="contact-us-form">Get a quote</button>
+                </div>
                 <p class="contact-us__guarantee">We don’t sell your email and spam</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- / CONTACT US -->
   </main>
   <footer class="footer">

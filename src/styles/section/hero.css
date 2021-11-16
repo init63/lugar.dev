@@ -9,11 +9,11 @@
 
 .hero__body {
   position: relative;
-  z-index: 2;
   height: 100vh;
 }
 
 .hero__content {
+  z-index: 2;
   align-self: center;
 }
 
@@ -43,12 +43,6 @@
   bottom: 0;
   max-width: 100%;
   height: auto;
-}
-
-@media (max-width: 767px) {
-  .hero__picture {
-    display: none;
-  }
 }
 
 @media (max-width: 410px) {

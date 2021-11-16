@@ -30,7 +30,20 @@
 
 .footer__wrapper {
   justify-content: space-between;
-  margin-bottom: 107px;
+}
+
+@media (max-width: 767px) {
+  .footer__wrapper {
+    flex-direction: column;
+    row-gap: 64px;
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    margin-bottom: 107px;
+  }
 }
 
 .footer__title {
