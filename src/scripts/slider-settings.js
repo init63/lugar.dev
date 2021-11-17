@@ -10,6 +10,7 @@ const projectsSlider = new Swiper('.projects__slider', {
 
 const commentsSlider = new Swiper('.comments__slider', {
   loop: true,
+  breakpointsBase: 'window',
   breakpoints: {
     280: {
       slidesPerView: 1,
@@ -17,7 +18,7 @@ const commentsSlider = new Swiper('.comments__slider', {
     },
     478: {
       slidesPerView: 2,
-      spaceBetween: 48
+      spaceBetween: 32
     },
     768: {
       spaceBetween: 120,
